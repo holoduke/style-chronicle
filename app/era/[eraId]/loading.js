@@ -1,17 +1,6 @@
 export default function EraLoading() {
   return (
-    <div className="min-h-screen pt-20">
-      {/* Timeline skeleton */}
-      <div className="bg-[#0f0f1a] border-b border-white/10">
-        <div className="container-custom py-6">
-          <div className="flex gap-3 overflow-hidden">
-            {[...Array(7)].map((_, i) => (
-              <div key={i} className="flex-shrink-0 w-28 h-20 bg-white/5 rounded-xl animate-pulse" />
-            ))}
-          </div>
-        </div>
-      </div>
-
+    <>
       {/* Hero skeleton */}
       <div className="relative py-24 md:py-36 min-h-[60vh] flex items-center bg-[#1a1a2e]">
         <div className="container-custom">
@@ -43,6 +32,21 @@ export default function EraLoading() {
           </div>
         </div>
       </div>
-    </div>
+
+      {/* Gallery skeleton */}
+      <div className="py-16">
+        <div className="container-custom">
+          <div className="text-center mb-12">
+            <div className="w-64 h-10 bg-white/10 rounded-lg mx-auto animate-pulse" />
+            <div className="w-48 h-6 bg-white/10 rounded-lg mx-auto mt-4 animate-pulse" />
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            {[...Array(8)].map((_, i) => (
+              <div key={i} className="aspect-[3/4] bg-white/5 rounded-xl animate-pulse" />
+            ))}
+          </div>
+        </div>
+      </div>
+    </>
   );
 }

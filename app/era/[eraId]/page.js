@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { fashionEras, getEraById, getAdjacentEras } from '@/lib/fashionEras';
 import DidYouKnow from '@/components/features/DidYouKnow';
-import EraTimeline from '@/components/features/EraTimeline';
 import GallerySection from '@/components/features/GallerySection';
 
 // Generate static params for all eras
@@ -68,14 +67,7 @@ export default async function EraPage({ params }) {
   const colors = era.colors || ['#e94560', '#f39c12', '#1a1a2e'];
 
   return (
-    <div className="min-h-screen pt-20">
-      {/* Era Timeline Navigation */}
-      <div className="bg-[#0f0f1a] border-b border-white/10">
-        <div className="container-custom">
-          <EraTimeline currentEraId={eraId} />
-        </div>
-      </div>
-
+    <>
       {/* Hero Section with Background Image */}
       <section className="relative py-24 md:py-36 overflow-hidden min-h-[60vh] flex items-center">
         {/* Background Image */}
@@ -274,6 +266,6 @@ export default async function EraPage({ params }) {
           }),
         }}
       />
-    </div>
+    </>
   );
 }
