@@ -1,7 +1,9 @@
 import { Inter, Playfair_Display } from 'next/font/google';
+import { Suspense } from 'react';
 import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
+import NavigationProgress from '@/components/layout/NavigationProgress';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -88,6 +90,9 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="antialiased">
+        <Suspense fallback={null}>
+          <NavigationProgress />
+        </Suspense>
         <Header />
         <main>{children}</main>
         <Footer />
