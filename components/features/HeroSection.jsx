@@ -20,7 +20,7 @@ export default function HeroSection() {
       {/* Background Grid Pattern */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute inset-0" style={{
-          backgroundImage: 'linear-gradient(#e94560 1px, transparent 1px), linear-gradient(90deg, #e94560 1px, transparent 1px)',
+          backgroundImage: 'linear-gradient(#ff6b81 1px, transparent 1px), linear-gradient(90deg, #ff6b81 1px, transparent 1px)',
           backgroundSize: '60px 60px'
         }} />
       </div>
@@ -28,7 +28,7 @@ export default function HeroSection() {
       {/* Animated Background Blobs */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
-          className="absolute top-1/4 -left-32 w-96 h-96 rounded-full bg-[#e94560]/20 blur-3xl"
+          className="absolute top-1/4 -left-32 w-96 h-96 rounded-full bg-[#ff6b81]/20 blur-3xl"
           animate={{
             x: [0, 50, 0],
             y: [0, 30, 0],
@@ -40,7 +40,7 @@ export default function HeroSection() {
           }}
         />
         <motion.div
-          className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full bg-[#f39c12]/20 blur-3xl"
+          className="absolute bottom-1/4 -right-32 w-96 h-96 rounded-full bg-[#ffb84d]/20 blur-3xl"
           animate={{
             x: [0, -50, 0],
             y: [0, -30, 0],
@@ -62,7 +62,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <span className="inline-block px-4 py-2 rounded-full bg-white/10 text-[#f39c12] text-sm font-medium mb-6 backdrop-blur-sm">
+          <span className="inline-block px-4 py-2 rounded-full bg-white/10 text-[#ffb84d] text-sm font-medium mb-6 backdrop-blur-sm">
             A Visual Journey Through Fashion History
           </span>
         </motion.div>
@@ -74,14 +74,14 @@ export default function HeroSection() {
           className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6"
           style={{ fontFamily: 'Playfair Display, serif' }}
         >
-          <span className="text-[#e94560]">Style</span>Chronicle
+          <span className="text-[#ff6b81]">Style</span>Chronicle
         </motion.h1>
 
         <motion.p
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-xl md:text-2xl text-white/70 max-w-2xl mx-auto mb-10"
+          className="text-xl md:text-2xl text-[#b3b3c3] max-w-2xl mx-auto mb-10"
         >
           From Edwardian elegance to digital age chic. Explore 120+ years of fashion evolution.
         </motion.p>
@@ -111,7 +111,7 @@ export default function HeroSection() {
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}
-          className="flex flex-col items-center gap-2 text-white/50"
+          className="flex flex-col items-center gap-2 text-[#9a9aad]"
         >
           <span className="text-sm">Scroll to explore</span>
           <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

@@ -85,7 +85,7 @@ export default function MasonryGrid({ images, eraId }) {
         >
           <div className={`relative overflow-hidden rounded-xl group ${getHeightClass(image.height)}`}>
             {/* Gradient placeholder background */}
-            <div className="absolute inset-0 bg-gradient-to-br from-[#e94560]/20 to-[#f39c12]/20 animate-pulse" />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#ff6b81]/20 to-[#ffb84d]/20 animate-pulse" />
 
             <Image
               src={image.src}

@@ -27,20 +27,20 @@ export default function ErasPage() {
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
-            backgroundImage: 'linear-gradient(#e94560 1px, transparent 1px), linear-gradient(90deg, #e94560 1px, transparent 1px)',
+            backgroundImage: 'linear-gradient(#ff6b81 1px, transparent 1px), linear-gradient(90deg, #ff6b81 1px, transparent 1px)',
             backgroundSize: '60px 60px'
           }} />
         </div>
 
         <div className="container-custom relative z-10">
           <div className="text-center max-w-3xl mx-auto">
-            <span className="text-[#f39c12] text-sm font-medium tracking-wider uppercase">
+            <span className="text-[#ffb84d] text-sm font-medium tracking-wider uppercase">
               Complete Collection
             </span>
             <h1 className="section-heading mt-4">
               All Fashion Eras
             </h1>
-            <p className="text-white/60 text-lg mt-6">
+            <p className="text-[#a5a5b8] text-lg mt-6">
               From the Edwardian elegance of 1900 to today&apos;s digital age style.
               Explore {fashionEras.length} distinct fashion decades.
             </p>
@@ -64,31 +64,31 @@ export default function ErasPage() {
         <div className="container-custom">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <div className="text-center">
-              <span className="text-4xl md:text-5xl font-bold text-[#e94560]" style={{ fontFamily: 'Playfair Display, serif' }}>
+              <span className="text-4xl md:text-5xl font-bold text-[#ff6b81]" style={{ fontFamily: 'Playfair Display, serif' }}>
                 120+
               </span>
-              <p className="text-white/60 mt-2">Years of Fashion</p>
+              <p className="text-[#a5a5b8] mt-2">Years of Fashion</p>
             </div>
 
             <div className="text-center">
-              <span className="text-4xl md:text-5xl font-bold text-[#f39c12]" style={{ fontFamily: 'Playfair Display, serif' }}>
+              <span className="text-4xl md:text-5xl font-bold text-[#ffb84d]" style={{ fontFamily: 'Playfair Display, serif' }}>
                 {fashionEras.length}
               </span>
-              <p className="text-white/60 mt-2">Distinct Eras</p>
+              <p className="text-[#a5a5b8] mt-2">Distinct Eras</p>
             </div>
 
             <div className="text-center">
-              <span className="text-4xl md:text-5xl font-bold text-[#e94560]" style={{ fontFamily: 'Playfair Display, serif' }}>
+              <span className="text-4xl md:text-5xl font-bold text-[#ff6b81]" style={{ fontFamily: 'Playfair Display, serif' }}>
                 50+
               </span>
-              <p className="text-white/60 mt-2">Style Icons</p>
+              <p className="text-[#a5a5b8] mt-2">Style Icons</p>
             </div>
 
             <div className="text-center">
-              <span className="text-4xl md:text-5xl font-bold text-[#f39c12]" style={{ fontFamily: 'Playfair Display, serif' }}>
+              <span className="text-4xl md:text-5xl font-bold text-[#ffb84d]" style={{ fontFamily: 'Playfair Display, serif' }}>
                 100+
               </span>
-              <p className="text-white/60 mt-2">Fashion Images</p>
+              <p className="text-[#a5a5b8] mt-2">Fashion Images</p>
             </div>
           </div>
         </div>

@@ -64,7 +64,7 @@ export default async function EraPage({ params }) {
   }
 
   const { prev, next } = getAdjacentEras(eraId);
-  const colors = era.colors || ['#e94560', '#f39c12', '#1a1a2e'];
+  const colors = era.colors || ['#ff6b81', '#ffb84d', '#1a1a2e'];
 
   return (
     <>
@@ -151,7 +151,7 @@ export default async function EraPage({ params }) {
                     >
                       {i + 1}
                     </span>
-                    <span className="text-white/80 text-lg pt-1">{style}</span>
+                    <span className="text-[#ccccdb] text-lg pt-1">{style}</span>
                   </li>
                 ))}
               </ul>
@@ -169,7 +169,7 @@ export default async function EraPage({ params }) {
                     {[...era.femaleIcons, ...era.maleIcons].map((icon, i) => (
                       <span
                         key={i}
-                        className="px-4 py-2 rounded-full bg-white/5 text-white/70 text-sm border border-white/10 hover:bg-white/10 transition-colors"
+                        className="px-4 py-2 rounded-full bg-white/5 text-[#b3b3c3] text-sm border border-white/10 hover:bg-white/10 transition-colors"
                       >
                         {icon}
                       </span>
@@ -198,12 +198,12 @@ export default async function EraPage({ params }) {
                 className="group flex items-center gap-4 p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors w-full md:w-auto"
               >
                 <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center group-hover:-translate-x-1 transition-transform">
-                  <svg className="w-6 h-6 text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-6 h-6 text-[#b3b3c3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                   </svg>
                 </div>
                 <div>
-                  <span className="text-white/50 text-sm">Previous Era</span>
+                  <span className="text-[#9a9aad] text-sm">Previous Era</span>
                   <p className="text-white font-semibold">{prev.decade} - {prev.title}</p>
                 </div>
               </Link>
@@ -213,7 +213,7 @@ export default async function EraPage({ params }) {
 
             <Link
               href="/eras"
-              className="px-6 py-3 rounded-full bg-white/10 text-white/70 hover:bg-white/20 hover:text-white transition-all"
+              className="px-6 py-3 rounded-full bg-white/10 text-[#b3b3c3] hover:bg-white/20 hover:text-white transition-all"
             >
               View All Eras
             </Link>
@@ -224,11 +224,11 @@ export default async function EraPage({ params }) {
                 className="group flex items-center gap-4 p-6 rounded-2xl bg-white/5 hover:bg-white/10 transition-colors w-full md:w-auto"
               >
                 <div className="text-right">
-                  <span className="text-white/50 text-sm">Next Era</span>
+                  <span className="text-[#9a9aad] text-sm">Next Era</span>
                   <p className="text-white font-semibold">{next.decade} - {next.title}</p>
                 </div>
                 <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center group-hover:translate-x-1 transition-transform">
-                  <svg className="w-6 h-6 text-white/70" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <svg className="w-6 h-6 text-[#b3b3c3]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
                 </div>

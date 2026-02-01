@@ -1,4 +1,4 @@
-export default function DidYouKnow({ fact, color = '#f39c12' }) {
+export default function DidYouKnow({ fact, color = '#ffb84d' }) {
   return (
     <div className="relative">
       <div
@@ -43,7 +43,7 @@ export default function DidYouKnow({ fact, color = '#f39c12' }) {
               >
                 Did You Know?
               </h4>
-              <p className="text-white/80 leading-relaxed">
+              <p className="text-[#ccccdb] leading-relaxed">
                 {fact}
               </p>
             </div>

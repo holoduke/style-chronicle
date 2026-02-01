@@ -32,11 +32,11 @@ export default function Header() {
       <nav className="container-custom">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#e94560] to-[#f39c12] flex items-center justify-center">
+            <div className="w-10 h-10 rounded-full bg-gradient-to-br from-[#ff6b81] to-[#ffb84d] flex items-center justify-center">
               <span className="text-white font-bold text-lg">SC</span>
             </div>
             <span className="text-xl md:text-2xl font-bold tracking-tight" style={{ fontFamily: 'Playfair Display, serif' }}>
-              <span className="text-[#e94560]">Style</span>Chronicle
+              <span className="text-[#ff6b81]">Style</span>Chronicle
             </span>
           </Link>
 
@@ -44,24 +44,24 @@ export default function Header() {
           <div className="hidden md:flex items-center gap-8">
             <Link
               href="/"
-              className={`text-sm font-medium transition-colors hover:text-[#e94560] ${
-                pathname === '/' ? 'text-[#e94560]' : 'text-white/80'
+              className={`text-sm font-medium transition-colors hover:text-[#ff6b81] ${
+                pathname === '/' ? 'text-[#ff6b81]' : 'text-[#ccccdb]'
               }`}
             >
               Home
             </Link>
             <Link
               href="/eras"
-              className={`text-sm font-medium transition-colors hover:text-[#e94560] ${
-                pathname === '/eras' ? 'text-[#e94560]' : 'text-white/80'
+              className={`text-sm font-medium transition-colors hover:text-[#ff6b81] ${
+                pathname === '/eras' ? 'text-[#ff6b81]' : 'text-[#ccccdb]'
               }`}
             >
               All Eras
             </Link>
             <Link
               href="/about"
-              className={`text-sm font-medium transition-colors hover:text-[#e94560] ${
-                pathname === '/about' ? 'text-[#e94560]' : 'text-white/80'
+              className={`text-sm font-medium transition-colors hover:text-[#ff6b81] ${
+                pathname === '/about' ? 'text-[#ff6b81]' : 'text-[#ccccdb]'
               }`}
             >
               About
@@ -101,19 +101,19 @@ export default function Header() {
           <div className="container-custom py-6 flex flex-col gap-4">
             <Link
               href="/"
-              className="text-lg font-medium py-2 hover:text-[#e94560] transition-colors"
+              className="text-lg font-medium py-2 hover:text-[#ff6b81] transition-colors"
             >
               Home
             </Link>
             <Link
               href="/eras"
-              className="text-lg font-medium py-2 hover:text-[#e94560] transition-colors"
+              className="text-lg font-medium py-2 hover:text-[#ff6b81] transition-colors"
             >
               All Eras
             </Link>
             <Link
               href="/about"
-              className="text-lg font-medium py-2 hover:text-[#e94560] transition-colors"
+              className="text-lg font-medium py-2 hover:text-[#ff6b81] transition-colors"
             >
               About
             </Link>

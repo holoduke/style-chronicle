@@ -104,7 +104,7 @@ export default function EraTimeline({ currentEraId }) {
 
         {fashionEras.map((era, index) => {
           const isActive = era.id === currentEraId;
-          const colors = era.colors || ['#e94560', '#f39c12'];
+          const colors = era.colors || ['#ff6b81', '#ffb84d'];
 
           return (
             <div
@@ -119,14 +119,14 @@ export default function EraTimeline({ currentEraId }) {
                 onClick={() => handleEraClick(era.id)}
                 className={`block p-4 rounded-xl transition-all duration-300 ${
                   isActive
-                    ? 'bg-white/15 ring-2 ring-[#e94560] scale-110'
+                    ? 'bg-white/15 ring-2 ring-[#ff6b81] scale-110'
                     : 'bg-white/5 hover:bg-white/10'
                 }`}
                 style={{ minWidth: '110px' }}
               >
                 <div className="text-center">
                   <span
-                    className={`text-xl font-bold block ${isActive ? '' : 'text-white/70'}`}
+                    className={`text-xl font-bold block ${isActive ? '' : 'text-[#b3b3c3]'}`}
                     style={{
                       color: isActive ? colors[0] : undefined,
                       fontFamily: 'Playfair Display, serif'
@@ -134,7 +134,7 @@ export default function EraTimeline({ currentEraId }) {
                   >
                     {era.decade}
                   </span>
-                  <span className="text-xs text-white/50 mt-1 block">
+                  <span className="text-xs text-[#9a9aad] mt-1 block">
                     {era.years.split('-')[0]}
                   </span>
                 </div>

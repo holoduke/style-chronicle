@@ -17,20 +17,20 @@ export default function AboutPage() {
       <section className="py-16 md:py-24 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, #e94560 1px, transparent 1px)',
+            backgroundImage: 'radial-gradient(circle at 2px 2px, #ff6b81 1px, transparent 1px)',
             backgroundSize: '40px 40px'
           }} />
         </div>
 
         <div className="container-custom relative z-10">
           <div className="max-w-3xl">
-            <span className="text-[#f39c12] text-sm font-medium tracking-wider uppercase">
+            <span className="text-[#ffb84d] text-sm font-medium tracking-wider uppercase">
               About This Project
             </span>
             <h1 className="section-heading mt-4">
-              <span className="text-[#e94560]">Style</span>Chronicle
+              <span className="text-[#ff6b81]">Style</span>Chronicle
             </h1>
-            <p className="text-white/70 text-xl mt-6 leading-relaxed">
+            <p className="text-[#b3b3c3] text-xl mt-6 leading-relaxed">
               A visual journey through over a century of fashion history, exploring how style
               has reflected society&apos;s evolution, cultural shifts, and the eternal human desire
               for self-expression.
@@ -45,20 +45,20 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Mission */}
             <div className="space-y-6">
-              <div className="w-14 h-14 rounded-2xl bg-[#e94560]/20 flex items-center justify-center">
-                <svg className="w-7 h-7 text-[#e94560]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="w-14 h-14 rounded-2xl bg-[#ff6b81]/20 flex items-center justify-center">
+                <svg className="w-7 h-7 text-[#ff6b81]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
               <h2 className="text-2xl font-bold" style={{ fontFamily: 'Playfair Display, serif' }}>
                 Our Mission
               </h2>
-              <p className="text-white/70 leading-relaxed">
+              <p className="text-[#b3b3c3] leading-relaxed">
                 StyleChronicle aims to make fashion history accessible and engaging for everyone.
                 We believe that understanding how we dressed in the past helps us appreciate
                 the present and imagine the future of fashion.
               </p>
-              <p className="text-white/70 leading-relaxed">
+              <p className="text-[#b3b3c3] leading-relaxed">
                 Each era tells a story - of social change, technological advancement, cultural
                 revolution, and individual expression. Through curated images and historical
                 context, we bring these stories to life.
@@ -67,20 +67,20 @@ export default function AboutPage() {
 
             {/* Curated Content */}
             <div className="space-y-6">
-              <div className="w-14 h-14 rounded-2xl bg-[#f39c12]/20 flex items-center justify-center">
-                <svg className="w-7 h-7 text-[#f39c12]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <div className="w-14 h-14 rounded-2xl bg-[#ffb84d]/20 flex items-center justify-center">
+                <svg className="w-7 h-7 text-[#ffb84d]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
                 </svg>
               </div>
               <h2 className="text-2xl font-bold" style={{ fontFamily: 'Playfair Display, serif' }}>
                 Curated Imagery
               </h2>
-              <p className="text-white/70 leading-relaxed">
+              <p className="text-[#b3b3c3] leading-relaxed">
                 Every image on StyleChronicle is carefully selected to represent the authentic
                 spirit of each fashion era. We focus on capturing the essence of each decade&apos;s
                 style - from silhouettes and fabrics to attitudes and aesthetics.
               </p>
-              <p className="text-white/70 leading-relaxed">
+              <p className="text-[#b3b3c3] leading-relaxed">
                 Our visual collection spans from the opulent Edwardian era to contemporary
                 streetwear, showcasing both haute couture influences and everyday fashion
                 that real people wore.
@@ -105,7 +105,7 @@ export default function AboutPage() {
                 <span className="text-pink-400 text-lg">W</span>
               </div>
               <h3 className="text-xl font-semibold mb-3">Women&apos;s Fashion</h3>
-              <p className="text-white/60">
+              <p className="text-[#a5a5b8]">
                 From corsets to crop tops, explore how women&apos;s fashion has evolved
                 as a reflection of changing social roles and freedoms.
               </p>
@@ -116,7 +116,7 @@ export default function AboutPage() {
                 <span className="text-blue-400 text-lg">M</span>
               </div>
               <h3 className="text-xl font-semibold mb-3">Men&apos;s Fashion</h3>
-              <p className="text-white/60">
+              <p className="text-[#a5a5b8]">
                 From three-piece suits to streetwear, discover how men&apos;s style
                 has transformed through rebellion, conformity, and creativity.
               </p>
@@ -127,7 +127,7 @@ export default function AboutPage() {
                 <span className="text-purple-400 text-lg">+</span>
               </div>
               <h3 className="text-xl font-semibold mb-3">Day-to-Day Style</h3>
-              <p className="text-white/60">
+              <p className="text-[#a5a5b8]">
                 Beyond haute couture, we focus on everyday fashion - the clothes
                 real people wore on the streets, at work, and at play.
               </p>
@@ -143,7 +143,7 @@ export default function AboutPage() {
             <h2 className="text-3xl font-bold mb-6" style={{ fontFamily: 'Playfair Display, serif' }}>
               Start Your Journey
             </h2>
-            <p className="text-white/60 max-w-2xl mx-auto mb-8">
+            <p className="text-[#a5a5b8] max-w-2xl mx-auto mb-8">
               Explore over a century of fashion history, from the elegant Edwardian era
               to today&apos;s digital age style revolution.
             </p>

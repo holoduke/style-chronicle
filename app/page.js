@@ -19,13 +19,13 @@ export default function HomePage() {
       <section className="py-20 md:py-32 relative overflow-hidden">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <span className="text-[#f39c12] text-sm font-medium tracking-wider uppercase">
+            <span className="text-[#ffb84d] text-sm font-medium tracking-wider uppercase">
               Present Day
             </span>
             <h2 className="section-heading mt-4">
               The 2020s
             </h2>
-            <p className="text-white/60 text-lg max-w-2xl mx-auto mt-4">
+            <p className="text-[#a5a5b8] text-lg max-w-2xl mx-auto mt-4">
               Where comfort meets couture in the digital age
             </p>
           </div>
@@ -37,7 +37,7 @@ export default function HomePage() {
                 <h3 className="text-2xl font-bold mb-4" style={{ fontFamily: 'Playfair Display, serif' }}>
                   {fashionEras[0].subtitle}
                 </h3>
-                <p className="text-white/70 leading-relaxed">
+                <p className="text-[#b3b3c3] leading-relaxed">
                   {fashionEras[0].description}
                 </p>
               </div>
@@ -45,11 +45,11 @@ export default function HomePage() {
               <DidYouKnow fact={fashionEras[0].didYouKnow} color={fashionEras[0].colors[0]} />
 
               <div>
-                <h4 className="text-lg font-semibold mb-3 text-[#e94560]">Key Styles</h4>
+                <h4 className="text-lg font-semibold mb-3 text-[#ff6b81]">Key Styles</h4>
                 <ul className="space-y-2">
                   {fashionEras[0].keyStyles.map((style, i) => (
-                    <li key={i} className="flex items-center gap-3 text-white/70">
-                      <span className="w-2 h-2 rounded-full bg-[#f39c12]" />
+                    <li key={i} className="flex items-center gap-3 text-[#b3b3c3]">
+                      <span className="w-2 h-2 rounded-full bg-[#ffb84d]" />
                       {style}
                     </li>
                   ))}
@@ -64,13 +64,13 @@ export default function HomePage() {
       <section className="py-20 md:py-32 bg-[#0f0f1a]">
         <div className="container-custom">
           <div className="text-center mb-16">
-            <span className="text-[#f39c12] text-sm font-medium tracking-wider uppercase">
+            <span className="text-[#ffb84d] text-sm font-medium tracking-wider uppercase">
               Travel Back
             </span>
             <h2 className="section-heading mt-4">
               Journey Through Time
             </h2>
-            <p className="text-white/60 text-lg max-w-2xl mx-auto mt-4">
+            <p className="text-[#a5a5b8] text-lg max-w-2xl mx-auto mt-4">
               Scroll through decades of fashion evolution
             </p>
           </div>
@@ -98,7 +98,7 @@ export default function HomePage() {
         {/* Background Pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{
-            backgroundImage: 'radial-gradient(circle at 2px 2px, #e94560 1px, transparent 1px)',
+            backgroundImage: 'radial-gradient(circle at 2px 2px, #ff6b81 1px, transparent 1px)',
             backgroundSize: '40px 40px'
           }} />
         </div>
@@ -108,7 +108,7 @@ export default function HomePage() {
             <h2 className="section-heading">
               Ready to Explore?
             </h2>
-            <p className="text-white/60 text-lg mt-6 mb-10">
+            <p className="text-[#a5a5b8] text-lg mt-6 mb-10">
               Dive deep into each decade and discover the stories, icons, and styles that shaped fashion history.
             </p>
             <Link href="/eras" className="btn-primary inline-flex items-center gap-2">

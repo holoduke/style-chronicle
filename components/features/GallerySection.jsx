@@ -22,7 +22,7 @@ export default function GallerySection({ eraId, decade }) {
           <h3 className="text-3xl md:text-4xl font-bold" style={{ fontFamily: 'Playfair Display, serif' }}>
             {decade} Fashion Gallery
           </h3>
-          <p className="text-white/60 mt-4">
+          <p className="text-[#a5a5b8] mt-4">
             Explore the defining looks of the era
           </p>
         </div>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function FashionCard({ era, index, variant = 'default' }) {
-  const colors = era.colors || ['#e94560', '#f39c12', '#1a1a2e'];
+  const colors = era.colors || ['#ff6b81', '#ffb84d', '#1a1a2e'];
 
   if (variant === 'compact') {
     return (
@@ -34,13 +34,13 @@ export default function FashionCard({ era, index, variant = 'default' }) {
 
             {/* Content */}
             <div className="absolute bottom-0 left-0 right-0 p-4">
-              <span className="text-xs font-medium text-[#f39c12] tracking-wider uppercase">
+              <span className="text-xs font-medium text-[#ffb84d] tracking-wider uppercase">
                 {era.years}
               </span>
               <h3 className="text-lg font-bold text-white mt-1" style={{ fontFamily: 'Playfair Display, serif' }}>
                 {era.title}
               </h3>
-              <p className="text-white/70 text-sm mt-1 line-clamp-2">
+              <p className="text-[#b3b3c3] text-sm mt-1 line-clamp-2">
                 {era.subtitle}
               </p>
             </div>
@@ -109,21 +109,21 @@ export default function FashionCard({ era, index, variant = 'default' }) {
             <h3 className="text-2xl md:text-3xl font-bold text-white mt-2" style={{ fontFamily: 'Playfair Display, serif' }}>
               {era.title}
             </h3>
-            <p className="text-white/80 text-base mt-2">
+            <p className="text-[#ccccdb] text-base mt-2">
               {era.subtitle}
             </p>
 
             {/* Key Styles Preview */}
             <div className="mt-4 flex flex-wrap gap-2">
               {era.keyStyles.slice(0, 2).map((style, i) => (
-                <span key={i} className="text-xs px-3 py-1 rounded-full bg-white/10 text-white/70">
+                <span key={i} className="text-xs px-3 py-1 rounded-full bg-white/10 text-[#b3b3c3]">
                   {style}
                 </span>
               ))}
             </div>
 
             {/* Explore Link */}
-            <div className="mt-4 flex items-center gap-2 text-white/60 group-hover:text-[#e94560] transition-colors">
+            <div className="mt-4 flex items-center gap-2 text-[#a5a5b8] group-hover:text-[#ff6b81] transition-colors">
               <span className="text-sm font-medium">Explore Era</span>
               <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
